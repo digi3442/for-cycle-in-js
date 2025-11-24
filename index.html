@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="radio" value="M" name="gender">Maschio<id="">
+    <input type="radio" value="F" name="gender">Femmina<id="">
+
+    <p id="risultato">Seleziona il tuo paese:</p>
+
+    <script>
+        document.querySelectorAll('input[name="gender"]').forEach(radio => {
+    
+        
+        document.addEventListener('change', function(e){
+            document.getElementById; ('risultato').innerText= 'hai selezionato ' + e.target.value;
+        })
+        })
+    </script>
+</body>
+
+
+</html>
