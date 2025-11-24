@@ -9,14 +9,12 @@
     <input type="radio" value="M" name="gender">Maschio<id="">
     <input type="radio" value="F" name="gender">Femmina<id="">
 
-    <p id="risultato">Seleziona il tuo paese:</p>
+    <p id="risultato">Seleziona il gender:</p>
 
     <script>
         document.querySelectorAll('input[name="gender"]').forEach(radio => {
-    
-        
-        document.addEventListener('change', function(e){
-            document.getElementById; ('risultato').innerText= 'hai selezionato ' + e.target.value;
+            document.addEventListener('change', function(e){
+                document.getElementById('risultato').textContent= 'hai selezionato: ' + e.target.value;
         })
         })
     </script>
