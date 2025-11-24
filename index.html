@@ -1,30 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <input type="radio" value="M" name="gender">Maschio<id="">
-    <input type="radio" value="F" name="gender">Femmina<id="">
+        <input type="radio" value="F" name="gender">Femmina<id="">
 
-    <p id="risultato">Seleziona il gender:</p>
+            <p id="risultato">Seleziona il gender:</p>
 
-    <script>
-        document.querySelectorAll('input[name="gender"]').forEach(radio => {
-            document.addEventListener('change', function(e){
-                document.getElementById('risultato').textContent= 'hai selezionato: ' + e.target.value;
-        })
-        })
-        
-        let numeri = [1, 2, 3, 4, 5];
-        numeri.forEach(n=>{
-            console.log(n)
-        })
-        console.log("Elemento indice 1: " + numeri[1]);
+            <script>
+                document.querySelectorAll('input[name="gender"]').forEach(radio => {
+                    document.addEventListener('change', function (e) {
+                        document.getElementById('risultato').textContent = 'hai selezionato: ' + e.target.value;
+                    })
+                })
 
-    </script>
+                let numeri = [1, 2, 3, 4, 5];
+                numeri.forEach(n => {
+                    console.log(n)
+                })
+                console.log("Elemento indice 1: " + numeri[1]);
+                numeri.push(6)
+                console.log(numeri)
+                console.log("la lunghezza dell'array è: " + numeri.length)
+                numeri.pop()
+                console.log(numeri)
+                console.log("la lunghezza dell'array è: " + numeri.length)
+            </script>
 </body>
 
 
